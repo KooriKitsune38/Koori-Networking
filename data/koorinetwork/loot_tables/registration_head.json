@@ -1,0 +1,23 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Users:[{Id:0,Nickname:\"\",Mails:{Received:[{Empty:1b}]},Gifts:{Received:[{Empty:1b}]}}]}"
+            },
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
