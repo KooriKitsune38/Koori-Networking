@@ -1,2 +1,1 @@
-Paper Coords : -17 5 -25
 Storage Item : @e[x=-17,y=5,z=-25,type=item,sort=nearest,limit=1,distance=..1]
