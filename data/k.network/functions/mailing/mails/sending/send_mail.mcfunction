@@ -10,6 +10,4 @@ item modify entity @s weapon.mainhand k.network:book.count
 tellraw @s {"text": "Mail Sent!","color": "green"}
 
 # Sounds & Particles #
-playsound minecraft:entity.parrot.fly master @s ~ ~ ~ 2 1
-execute anchored eyes run particle cloud ^ ^ ^.5 .2 .2 .2 .01 10 force
-particle enchant ~ ~.5 ~ .1 .1 .1 1 50 force
+function k.network:sounds/send.sound
