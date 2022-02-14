@@ -1,5 +1,8 @@
 #> k.network:network/database/cycles/full.search/check.ids
 
+# Busy On
+data modify storage k.network:database DatabaseStatus.Busy set value 1b
+
 # Retrieve Ids
 #> Current ID
 execute store result score .curID k.nIDs run data get storage k.network:database Users[0].Id
@@ -20,3 +23,6 @@ execute unless score .matchingID k.nIDs matches 1 unless score .nullID k.nIDs ma
 
 # Reset Score #
 scoreboard players reset .firstID k.nIDs
+
+# Busy On
+data modify storage k.network:database DatabaseStatus.Busy set value 0b

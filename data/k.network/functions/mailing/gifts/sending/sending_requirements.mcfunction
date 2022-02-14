@@ -1,3 +1,5 @@
+#> k.network:mailing/gifts/sending/sending_requirements
+
 # Check IDs
 #> Store Triggered ID
 scoreboard players operation .triggeredID k.nIDs = @s SendGift
@@ -15,4 +17,4 @@ scoreboard players reset .matchingID k.nIDs
 scoreboard players reset .nullID k.nIDs
 
 # Play Sound #
-playsound minecraft:entity.fox.spit master @s ~ ~ ~ 2 2
+playsound minecraft:entity.fox.spit ambient @s ~ ~ ~ 2 2

@@ -3,11 +3,11 @@
 # Take Book NBT and Transfer To Database #
 data modify storage k.network:database Users[0].Mails.Received append from entity @s SelectedItem.tag
 
+# Decrease books count
+item modify entity @s weapon.mainhand k.network:book.count
+
 # Tell It's Sent #
 tellraw @s {"text": "Mail Sent!","color": "green"}
-
-# Remove Book #
-item replace entity @s weapon.mainhand with air
 
 # Sounds & Particles #
 playsound minecraft:entity.parrot.fly master @s ~ ~ ~ 2 1
