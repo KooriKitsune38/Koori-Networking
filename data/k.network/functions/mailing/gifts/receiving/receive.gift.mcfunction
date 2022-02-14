@@ -1,7 +1,7 @@
 #> k.network:mailing/gifts/receiving/receive.gift
 
 # Summon Box #
-summon item ~ ~ ~ {Item:{id:"minecraft:white_shulker_box",Count:1b},NoGravity:1b,PickupDelay:2,Tags:["MailBoxPlaceholder"]}
+function k.network:mailing/gifts/receiving/sort.color
 
 # Copy Data From Database #
 data modify entity @e[type=item,sort=nearest,limit=1,distance=..1.1,tag=MailBoxPlaceholder] Item.tag set from storage k.network:database Users[0].Gifts.Received[1]

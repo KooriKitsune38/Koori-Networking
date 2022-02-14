@@ -2,7 +2,7 @@
 
 # Block Player #
 effect give @s slowness 1 255 true
-effect give @s slow_falling 1 255 true
+effect give @s jump_boost 1 200 true
 
 # Summon Item #
 tag @s add .temp
